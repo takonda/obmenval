@@ -3,8 +3,6 @@ import json
 from tkinter import *
 from tkinter import messagebox as mb
 
-from bottle import response
-
 
 def exchange():
     code = entry.get()
@@ -23,13 +21,14 @@ def exchange():
         except Exception as e:
             mb.showerror('Ошибка!',f'Произошла ошибка: {e}.')
     else:
-        mb. showwarning('Внимание!',f'Введите код валюты')
+        mb. showwarning('Внимание!','Введите код валюты')
 
 window=Tk()
 window.title('Курсы обмена валют')
-window.geometry('360x80')
+window.geometry('360x180')
 
 Label(text='Введите код валюты').pack(padx=10, pady=10)
+
 entry = Entry()
 entry.pack(padx=10, pady=10)
 
