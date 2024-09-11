@@ -1,11 +1,10 @@
-from cProfile import label
-
 import requests
 import json
 from tkinter import *
 from tkinter import messagebox as mb
 
 
+def exchange
 
 window=Tk()
 window.title('Курсы обмена валют')
